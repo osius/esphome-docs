@@ -49,7 +49,42 @@ Advanced options:
 - **internal** (*Optional*, boolean): Mark this component as internal. Internal components will
   not be exposed to the frontend (like Home Assistant). Only specifying an ``id`` without
   a ``name`` will implicitly set this to true.
-- If MQTT enabled, all other options from :ref:`MQTT Component <config-mqtt-component>`.
+
+MQTT options:
+
+- **action_state_topic** (*Optional*, string): The topic to
+  publish climate action state changes to.
+- **away_command_topic** (*Optional*, string): The topic to
+  receive climate away commands.
+- **away_state_topic** (*Optional*, string): The topic to
+  publish climate away state changes to.
+- **fan_mode_command_topic** (*Optional*, string): The topic to
+  receive fan commands.
+- **fan_mode_state_topic** (*Optional*, string): The topic to
+  publish fan state changes to.
+- **current_temperature_state_topic** (*Optional*, string): The topic to
+  publish the current temperature state changes to.
+- **mode_command_topic** (*Optional*, string): The topic to
+  receive mode commands.
+- **mode_state_topic** (*Optional*, string): The topic to
+  publish mode state changes to.
+- **swing_mode_command_topic** (*Optional*, string): The topic to
+  receive swing commands.
+- **swing_mode_state_topic** (*Optional*, string): The topic to
+  publish swing state changes to.
+- **target_temperature_command_topic** (*Optional*, string): The topic to
+  receive target temperature commands.
+- **target_temperature_state_topic** (*Optional*, string): The topic to
+  publish target tempweature state changes to.
+- **target_temperature_high_command_topic** (*Optional*, string): The topic to
+  receive target tempweature high commands.
+- **target_temperature_high_state_topic** (*Optional*, string): The topic to
+  publish target tempweature high state changes to.
+- **target_temperature_low_command_topic** (*Optional*, string): The topic to
+  receive target tempweature low commands.
+- **target_temperature_low_state_topic** (*Optional*, string): The topic to
+  publish target tempweature low state changes to.
+- All other options from :ref:`MQTT Component <config-mqtt-component>`.
 
 Climate Automation
 ------------------
