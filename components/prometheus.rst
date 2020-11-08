@@ -27,6 +27,8 @@ Configuration variables:
 ------------------------
 
 - **id** (*Optional*, :ref:`config-id`): Manually specify the ID used for code generation.
+- **buffer_size** (**Optional**, int default: 1460, min: 1024, max: 3072): The stream buffer size for the response. 
+  If many things are connected to the esp the response can get a bit longer and not all is written to the response.
 
 .. note::
 
